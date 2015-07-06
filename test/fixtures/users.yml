@@ -6,7 +6,8 @@ michael:
   number: 6165552333
   password_digest: <%= User.digest('password') %>
 
-#two:
-#  name: MyString
-#  email: MyString
-#  number: MyString
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  number: 6165552333
+  password_digest: <%= User.digest('password') %>
