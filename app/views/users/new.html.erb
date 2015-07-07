@@ -31,27 +31,29 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+      <h2> For Farmers: </h2>
 
-      <%= f.label :crop %>
+      <%= f.label "crop requiring pollination" %>
       <%= f.text_field :crop, class: 'form-control', placeholder: "crop"%>
 
-      <%= f.label "acres of land" %>
+      <%= f.label "acres to be pollinated" %>
       <%= f.text_field :acres, class: 'form-control', placeholder: "acres"%>
 
-      <%= f.label "start date" %>
+      <%= f.label "estimated pollination start date" %>
       <%= f.date_field :startdate, class: 'form-control', placeholder: "start date"%>
 
-      <%= f.label "end date" %>
+      <%= f.label "estimated pollination end date" %>
       <%= f.date_field :enddate, class: 'form-control', placeholder: "end date"%>
 
+      <h2> For Beekeepers: </h2>
 
-      <%= f.label :company %>
+      <%= f.label "company (optional)" %>
       <%= f.text_field :company, class: 'form-control', placeholder: "company (optional)"%>
 
-      <%= f.label "number of hives" %>
+      <%= f.label "number of hives available" %>
       <%= f.text_field :number_of_hives, class: 'form-control', placeholder: "number of hives"%>
 
-      <%= f.label "years experience" %>
+      <%= f.label "years of beekeeping experience" %>
       <%= f.text_field :years_exp, class: 'form-control', placeholder: "years experience"%>
 
       <%= f.label "price per hive" %>
