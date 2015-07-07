@@ -4,6 +4,8 @@ michael:
   name: Michael Example
   email: michael@example.com
   number: 6165552333
+  city: Yonkers
+  state: NY
   password_digest: <%= User.digest('password') %>
 
 archer:

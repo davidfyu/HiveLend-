@@ -1,8 +1,3 @@
-<!-- <h1>New User</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', users_path %> -->
 
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
@@ -19,13 +14,48 @@
       <%= f.email_field :email, class: 'form-control', placeholder: "email" %>
 
       <%= f.label :number %>
-      <%= f.phone_field :number, class: 'form-control' %>
+      <%= f.phone_field :number, class: 'form-control', placeholder: "phone number" %>
+
+      <%= f.label :city %>
+      <%= f.text_field :city, class: 'form-control', placeholder: "city"%>
+
+      <%= f.label :state %>
+      <%= f.text_field :state, class: 'form-control', placeholder: "state"%>
+
+      <%= f.label :zipcode %>
+      <%= f.text_field :zipcode, class: 'form-control', placeholder: "zipcode"%>
 
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+
+      <%= f.label :crop %>
+      <%= f.text_field :crop, class: 'form-control', placeholder: "crop"%>
+
+      <%= f.label "acres of land" %>
+      <%= f.text_field :acres, class: 'form-control', placeholder: "acres"%>
+
+      <%= f.label "start date" %>
+      <%= f.date_field :startdate, class: 'form-control', placeholder: "start date"%>
+
+      <%= f.label "end date" %>
+      <%= f.date_field :enddate, class: 'form-control', placeholder: "end date"%>
+
+
+      <%= f.label :company %>
+      <%= f.text_field :company, class: 'form-control', placeholder: "company (optional)"%>
+
+      <%= f.label "number of hives" %>
+      <%= f.text_field :number_of_hives, class: 'form-control', placeholder: "number of hives"%>
+
+      <%= f.label "years experience" %>
+      <%= f.text_field :years_exp, class: 'form-control', placeholder: "years experience"%>
+
+      <%= f.label "price per hive" %>
+      <%= f.text_field :price_per_hive, class: 'form-control', placeholder: "price per hive"%>
 
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>

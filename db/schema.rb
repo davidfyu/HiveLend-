@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150707000040) do
+ActiveRecord::Schema.define(version: 20150707170853) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
@@ -22,6 +22,20 @@ ActiveRecord::Schema.define(version: 20150707000040) do
     t.string   "password_digest"
     t.string   "remember_digest"
     t.boolean  "admin",           default: false
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.string   "numberOfHives"
+    t.string   "yearsExp"
+    t.string   "pricePerHive"
+    t.string   "crop"
+    t.string   "acres"
+    t.date     "startdate"
+    t.date     "enddate"
+    t.string   "company"
+    t.string   "number_of_hives"
+    t.string   "years_exp"
+    t.string   "price_per_hive"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

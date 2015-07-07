@@ -74,7 +74,9 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email, :number, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :number, :city, :state, :zipcode, 
+        :password, :password_confirmation, :crop, :acres, :startdate, :enddate, :company,
+        :number_of_hives, :years_exp, :price_per_hive)
     end
 
      # Confirms a logged-in user.
