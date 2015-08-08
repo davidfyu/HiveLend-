@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
    def index
-    @user = User.paginate(page: params[:page])
+    @users = User.paginate(page: params[:page])
   end
 
   # GET /users/1
@@ -19,11 +19,6 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
-
-  def newFarmer
-    @user = User.new
-  end
-
 
   # GET /users/1/edit
    def edit
