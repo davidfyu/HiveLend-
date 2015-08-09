@@ -1,15 +1,22 @@
 <% provide(:title, @user.name) %>
 <h1>
   <%= gravatar_for @user %>
-  <%= @user.name %>
-  <%= @user.city %>
-  <%= @user.state %>
-  <%= @user.number_of_hives %>
-  <%= @user.price_per_hive %>
-  <%= @user.years_exp %>
-  <%= @user.crop %>
-  <%= @user.acres %>
-
-
-
+  <br>
+  <%= @user.name = @user.name %>
+  <br>
+  City: <%= @user.city %>
+  <br>
+  State: <%= @user.state %>
+  <br>
+  Hives Available: <%= @user.number_of_hives %>
+  <br>
+  Price Per Hive: <%= @user.price_per_hive %>
+  <br>
+  Years of Experience: <%= @user.years_exp %>
+  <br>
+  Crop:  <%= @user.crop %>
+  <br>
+  Acres Available: <%= @user.acres %>
+  <br>
+  
 </h1>
