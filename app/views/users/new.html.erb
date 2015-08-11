@@ -70,8 +70,10 @@
     <%= form_for(@user) do |f| %>
     	<%= render 'shared/error_messages' %>
 
+      <%= f.hidden_field :company, class: 'form-control', :value => 'Beekeeper' %>
+
       <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control'%>
+      <%= f.text_field :name, class: 'form-control' %>
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
@@ -93,9 +95,6 @@
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
-
-      <%= f.label "company (optional)" %>
-      <%= f.text_field :company, class: 'form-control'%>
 
       <%= f.label "number of hives available" %>
       <%= f.text_field :number_of_hives, class: 'form-control'%>
